@@ -13,6 +13,7 @@ import { Graphic1Component } from './graphic1/graphic1.component';
 import { AccountSettingsComponent } from './account-settings/account-settings.component';
 import { PromisesComponent } from './promises/promises.component';
 import { TestComponent } from './test/test.component';
+import { RxJSComponent } from './rx-js/rx-js.component';
 
 
 
@@ -24,7 +25,8 @@ import { TestComponent } from './test/test.component';
         PagesComponent,
         PromisesComponent,
         TestComponent,
-        AccountSettingsComponent
+        AccountSettingsComponent,
+        RxJSComponent
     ],
     imports: [
         CommonModule,

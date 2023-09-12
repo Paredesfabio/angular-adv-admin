@@ -7,18 +7,20 @@ import { Graphic1Component } from './graphic1/graphic1.component';
 import { PromisesComponent } from './promises/promises.component';
 import { TestComponent } from './test/test.component';
 import { AccountSettingsComponent } from './account-settings/account-settings.component';
+import { RxJSComponent } from './rx-js/rx-js.component';
 
 const routes: Routes = [
     {
         path: 'dashboard',
         component: PagesComponent,
         children: [
-            { path: '', component: DashboardComponent },
-            { path: 'progress', component: ProgressComponent },
-            { path: 'graphic1', component: Graphic1Component },
-            { path: 'promises', component: PromisesComponent },
-            { path: 'account-settings', component: AccountSettingsComponent },
-            { path: 'test', component: TestComponent },
+            { path: '', component: DashboardComponent, data: { title: 'Dashboard'}},
+            { path: 'progress', component: ProgressComponent, data: { title: 'Progress'}},
+            { path: 'graphic1', component: Graphic1Component, data: { title: 'Graphics'}},
+            { path: 'promises', component: PromisesComponent, data: { title: 'Promises'}},
+            { path: 'account-settings', component: AccountSettingsComponent, data: { title: 'Settings'}},
+            { path: 'test', component: TestComponent, data: { title: 'Test'}},
+            { path: 'rxjs', component: RxJSComponent, data: { title: 'RxJS'}},
         ]
     },
 ];
